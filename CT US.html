@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Javis Tech (Pty) Ltd.</title>
+
+    <!-- Link to the separate CSS file -->
+    <link rel="stylesheet" href="Contacts.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER AND NAVIGATION -->
+        <header class="site-header">
+
+            <a href="index.html" class="brand">
+                <img src="JAVIS logo.png"
+                     alt="Javis Tech Logo">
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html">HOME</a>
+                <a href="About Us.html">ABOUT US</a>
+                <a href="services.html">SERVICES</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="CT US.html" class="active">CONTACTS</a>
+            </nav>
+
+        </header>
+
+        <!-- PAGE INTRODUCTION -->
+        <main>
+
+            <section class="page-intro">
+
+                <h1>Contact Us</h1>
+
+                <p>
+                    Need help with your device? Get in touch with Javis Tech.
+                    Tell us about the problem and our team can help you with
+                    the next steps towards getting your technology working again.
+                </p>
+
+            </section>
+
+            <!-- CONTACT FORM AND BUSINESS INFORMATION -->
+            <div class="contact-layout">
+
+                <!-- LEFT PANEL: CONTACT FORM -->
+                <section class="panel contact-form-panel">
+
+                    <h2>Send Us a Message</h2>
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="fullName">Full Name *</label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email Address *</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="phone">Phone Number</label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="device">Device Type *</label>
+
+                                <select id="device" name="device" required>
+                                    <option value="">Choose a device</option>
+                                    <option>Smartphone</option>
+                                    <option>Tablet</option>
+                                    <option>Laptop or computer</option>
+                                    <option>Camera</option>
+                                    <option>Other device</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-field">
+                            <label for="subject">Subject *</label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="e.g. Phone screen repair"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">How Can We Help? *</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Describe the device problem..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            Send Message
+                        </button>
+
+                        <p class="form-note">
+                            * Required fields. This form is a demonstration.
+                            A server or form service is required to deliver
+                            messages.
+                        </p>
+
+                        <p
+                            id="formFeedback"
+                            class="form-feedback"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </section>
+
+                <!-- RIGHT PANEL: BUSINESS CONTACT INFORMATION -->
+                <aside class="panel contact-info">
+
+                    <h2>Get in Touch</h2>
+
+                    <p class="info-intro">
+                        We welcome enquiries about repairs, troubleshooting
+                        and the devices we support.
+                    </p>
+
+                    <!-- PHONE -->
+                    <div class="info-item">
+
+                        <span class="info-icon">&#9742;</span>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p>
+                                (+267) 367 486
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="info-item">
+
+                        <span class="info-icon">&#9993;</span>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>
+                                javistech@repairs.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- LOCATION -->
+                    <div class="info-item">
+
+                        <span class="info-icon">&#9873;</span>
+
+                        <div>
+                            <h3>Location</h3>
+                            <p>
+                                Plot 2847, Kgale View.
+                                Gaborone, Botswana
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- BUSINESS HOURS -->
+                    <div class="info-item">
+
+                        <span class="info-icon">&#9200;</span>
+
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>
+                                Mon- Friday: 0800hrs- 1630hrs
+                                Sat: 1000hrs - 1330hrs
+                                
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- REPAIR INFORMATION -->
+                    <div class="service-note">
+
+                        <strong>Need a repair?</strong>
+
+                        <br>
+
+                        When contacting us, include your device brand,
+                        model and a brief description of the fault so we
+                        can understand your request.
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            &copy; <span id="year"></span>
+            Javis Tech (Pty) Ltd. All rights reserved.
+
+        </footer>
+
+    </div>
+
+    <!-- BASIC FORM INTERACTION -->
+    <script>
+        document.getElementById("contactForm").addEventListener(
+            "submit",
+            function(event) {
+                event.preventDefault();
+
+                document.getElementById("formFeedback").textContent =
+                    "Thank you! The form is working visually, but a server or form service is needed to send your message.";
+            }
+        );
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>

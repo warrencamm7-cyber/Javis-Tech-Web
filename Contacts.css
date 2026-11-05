@@ -1,0 +1,433 @@
+
+/* ========================================
+   JAVIS TECH CONTACT PAGE
+   CSS STYLING
+   ======================================== */
+
+/* GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #070c0b;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    width: 87.6%;
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 30px 0 24px;
+}
+
+/* HEADER */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 26px;
+}
+
+/* JAVIS TECH LOGO */
+
+.brand {
+    display: block;
+    width: 155px;
+    flex: 0 0 155px;
+}
+
+.brand img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* NAVIGATION BAR */
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding-top: 17px;
+}
+
+.navigation a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 106px;
+    min-height: 34px;
+
+    padding: 10px 18px;
+
+    border-radius: 24px;
+    background-color: #c2812d;
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.navigation a:hover {
+    background-color: #df9639;
+    transform: translateY(-1px);
+}
+
+/* HIGHLIGHT CURRENT PAGE */
+
+.navigation a.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* PAGE HEADING */
+
+.page-intro {
+    max-width: 720px;
+    margin-bottom: 24px;
+}
+
+.page-intro h1 {
+    margin: 0 0 10px;
+
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: -0.7px;
+}
+
+.page-intro p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* MAIN TWO-COLUMN LAYOUT */
+
+.contact-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 445px)
+        minmax(0, 360px);
+
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* CONTACT PANELS */
+
+.panel {
+    min-width: 0;
+
+    border: 1px solid #293130;
+    border-radius: 13px;
+
+    background-color: rgba(4, 11, 10, 0.55);
+
+    padding: 20px;
+}
+
+.panel h2 {
+    margin: 0 0 14px;
+
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+/* FORM ROWS */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* FORM FIELDS */
+
+.form-field {
+    margin-bottom: 13px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* INPUTS, DROPDOWN AND TEXT AREA */
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    display: block;
+    width: 100%;
+
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+
+    outline: none;
+
+    background-color: #f5f5f5;
+    color: #222222;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.form-field input,
+.form-field select {
+    height: 34px;
+    padding: 7px 10px;
+}
+
+.form-field textarea {
+    min-height: 94px;
+    padding: 10px;
+    resize: vertical;
+}
+
+/* INPUT FOCUS EFFECT */
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #c2812d;
+
+    box-shadow:
+        0 0 0 2px rgba(194, 129, 45, 0.22);
+}
+
+/* SEND MESSAGE BUTTON */
+
+.submit-button {
+    min-height: 34px;
+
+    padding: 9px 20px;
+
+    border: none;
+    border-radius: 22px;
+
+    background-color: #c2812d;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #df9639;
+}
+
+/* FORM NOTE */
+
+.form-note,
+.form-feedback {
+    margin: 10px 0 0;
+
+    color: #d1d1d1;
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* RIGHT PANEL INTRODUCTION */
+
+.info-intro {
+    margin: -3px 0 18px;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* CONTACT INFORMATION ITEMS */
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+
+    margin-bottom: 17px;
+}
+
+/* ROUND ORANGE ICONS */
+
+.info-icon {
+    display: flex;
+
+    flex: 0 0 32px;
+
+    width: 32px;
+    height: 32px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #c2812d;
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+/* CONTACT ITEM HEADINGS */
+
+.info-item h3 {
+    margin: 1px 0 4px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* CONTACT ITEM TEXT */
+
+.info-item p {
+    margin: 0;
+
+    color: #e0e0e0;
+
+    font-size: 11px;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+/* REPAIR INFORMATION BOX */
+
+.service-note {
+    margin-top: 21px;
+    padding: 13px;
+
+    border-left: 2px solid #c2812d;
+
+    background-color: #1d1b13;
+    color: #f0f0f0;
+
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+/* FOOTER */
+
+.footer {
+    width: min(825px, 100%);
+
+    margin-top: 18px;
+
+    color: #d0d0d0;
+
+    font-size: 10px;
+    text-align: center;
+}
+
+/* ========================================
+   TABLET RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1000px) {
+
+    .page {
+        width: 92%;
+        max-width: 720px;
+    }
+
+    .site-header {
+        align-items: center;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .brand {
+        width: 155px;
+        flex-basis: auto;
+    }
+
+    .navigation {
+        justify-content: center;
+        gap: 10px;
+        padding-top: 0;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 650px) {
+
+    .page {
+        width: 90%;
+        padding-top: 22px;
+    }
+
+    .navigation {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navigation a {
+        min-width: auto;
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .page-intro h1 {
+        font-size: 31px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+}
+
+/* SMALL MOBILE SCREENS */
+
+@media (max-width: 420px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .navigation a {
+        font-size: 9px;
+        padding: 9px 10px;
+    }
+}
